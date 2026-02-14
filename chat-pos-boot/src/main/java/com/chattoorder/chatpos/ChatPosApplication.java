@@ -1,13 +1,13 @@
-package com.chattoorder.chat_pos_backend;
+package com.chattoorder.chatpos;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ChatPosBackendApplication {
+public class ChatPosApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ChatPosBackendApplication.class, args);
+		SpringApplication.run(ChatPosApplication.class, args);
 	}
 
 }
