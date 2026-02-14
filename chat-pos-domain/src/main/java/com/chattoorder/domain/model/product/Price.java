@@ -1,4 +1,5 @@
 package com.chattoorder.domain.model.product;
 
-public class Price {
-}
+import java.math.BigDecimal;
+
+public record Price(BigDecimal amount, String currency) {}

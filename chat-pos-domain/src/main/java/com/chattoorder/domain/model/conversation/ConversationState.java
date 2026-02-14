@@ -1,4 +1,9 @@
 package com.chattoorder.domain.model.conversation;
 
-public class ConversationState {
+public enum ConversationState {
+    IDLE,
+    ORDERING,
+    CHECKOUT,
+    PAYMENT_PENDING,
+    COMPLETED
 }
