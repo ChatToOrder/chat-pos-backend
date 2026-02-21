@@ -50,4 +50,28 @@
 		</dependencies>
 	</dependencyManagement>
 
+	<build>
+		<pluginManagement>
+			<plugins>
+				<!-- Maven Surefire Plugin - Ensures tests run and build fails if tests fail -->
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-surefire-plugin</artifactId>
+					<version>3.0.0-M9</version>
+					<configuration>
+						<!-- Test patterns to match -->
+						<includes>
+							<include>**/*Test.java</include>
+							<include>**/*Tests.java</include>
+						</includes>
+						<!-- Fail build if there are test failures -->
+						<testFailureIgnore>false</testFailureIgnore>
+						<!-- Skip tests only if explicitly configured -->
+						<skipTests>false</skipTests>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+
 </project>
